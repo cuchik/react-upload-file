@@ -1,0 +1,12 @@
+const HttpStatusCode = {
+  OK: 200,
+  CREATED: 201,
+  PATH_OK: 204,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  NOT_FOUND: 404,
+  EXISTENT: 409,
+  INTERNAL_SERVER: 500,
+  SERVICE_NOT_AVAILABLE: 503,
+};
+export default HttpStatusCode;

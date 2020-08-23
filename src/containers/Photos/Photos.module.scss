@@ -1,0 +1,106 @@
+.select {
+  min-width: 60px;
+  margin-left: 20px;
+}
+.actions {
+  display: flex;
+  > div {
+    margin-right: 20px;
+    &:first-child {
+      width: 150px;
+    }
+    &:nth-child(2) {
+      width: 150px;
+    }
+  }
+  &.isEditMode {
+    > div {
+      &:first-child {
+        width: 300px;
+      }
+    }
+  }
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.modal {
+  width: 800px;
+  max-width: 800px !important;
+  padding: 20px;
+}
+.modalTitle {
+  margin-bottom: 20px;
+  svg {
+    cursor: pointer;
+  }
+}
+.modalTitle,
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.modalFooter {
+  margin-top: 20px;
+  .uploadButton {
+    width: 150px;
+  }
+}
+.selectAlbum {
+  width: 200px;
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+.content {
+  ul {
+    margin-right: -20px;
+    li {
+      width: 20%;
+      display: inline-block;
+      padding-right: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      img {
+        border-radius: 6px;
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+  &.isDeleteMode {
+    li {
+      cursor: pointer;
+    }
+  }
+}
+.checkbox {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  color: white !important;
+  svg {
+    path {
+      stroke: black;
+    }
+  }
+}
+.backdrop {
+  z-index: 1400 !important;
+  color: white;
+}
+.deleteModalButtons {
+  justify-content: flex-end;
+  > div {
+    width: 150px;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
